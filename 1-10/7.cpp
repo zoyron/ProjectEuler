@@ -6,7 +6,7 @@
 #define pb push_back
 #define endl '\n'
 #define bug(...)       __f (#__VA_ARGS__, __VA_ARGS__)
-#define N 10000000
+#define N 150000
 
 using namespace std;
 
