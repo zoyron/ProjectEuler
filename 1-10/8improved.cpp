@@ -40,13 +40,16 @@ void solve(){
   for(int i = 0;i<str.length(); i++)
     arr[i] = str[i] - '0';
   int i, j, productLen;
-  for(int i = 0;i<productLen;i++)
-    prod *= arr[i];
   cout << "enter the length of digits: " ;
   cin >> productLen;
   for(i = 0; i + productLen <= 1000; i++){
-
+    prod = 1;
+    for(j = 0; j<productLen;j++)
+      prod *= arr[i + j];
+    if(prod > largeProd)
+      largeProd = prod;
   }
+  cout << largeProd << endl;
 }
 
 int32_t main(){
