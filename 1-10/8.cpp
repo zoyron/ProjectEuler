@@ -36,9 +36,25 @@ string str = "731671765313306249192251196744265747423553491949349698352031277450
 
 void solve(){
   int arr[1000];
-  lli prod = 1;
+  lli prod = 1, largeProd = 1;
   for(int i = 0;i<str.length(); i++)
     arr[i] = str[i] - '0';
+  for(int i = 0;i<13;i++)
+    prod *= arr[i];
+  largeProd = prod;
+  int i = 0, j;
+  for(j = 13; j < 1000 ; j++){
+    if(arr[i] && arr[j]){
+      prod /= arr[i];
+      prod *= arr[j];
+    }
+    if(prod == 0)
+      prod = 1;
+    i++;
+    if(prod > largeProd)
+      largeProd = prod;
+  }
+  cout << largeProd << endl;
 }
 
 int32_t main(){
