@@ -1,2 +1,106 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+*.manifest
+*.spec
+.env
+.venv
+env/
+venv/
+ENV/
+.ipynb_checkpoints/
+.mypy_cache/
+.pytest_cache/
+.coverage
+.tox/
+.pyre/
+.dmypy.json
+.pytype/
+
+# Jupyter Notebook checkpoints
+*.ipynb_checkpoints
+
+# === C / C++ ===
+# Build artifacts
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.app
+*.i
+*.ii
+*.gch
+*.pch
+*.d
+
+# Build directories
+/build/
+bin/
+Debug/
+debug/
+Release/
+release/
+x64/
+x86/
+*.sdf
+*.opensdf
+*.VC.db
+*.idb
+*.pdb
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+Makefile.in
+configure
+configure.ac
+aclocal.m4
+autom4te.cache/
+compile
+config.*
+depcomp
+install-sh
+ltmain.sh
+missing
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+*.layout.save
+
+# === General ===
+*.log
+*.swp
+*.DS_Store
+*.bak
+*.tmp
+*.old
+*~
+
+# === VSCode / IDEs ===
+.vscode/
+.idea/
+*.code-workspace
+
 a.out
 test.cpp
